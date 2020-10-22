@@ -1,0 +1,30 @@
+.header {
+    height: 95vh;
+    background: url(/img/banner-4.png);
+    background-size: cover;
+    background-position: center bottom;
+
+    &__heading {
+        color: $color-white;
+        font-size: 7.5rem;
+        font-weight: 100;
+        letter-spacing: 2rem;
+        line-height: 1;
+
+        &--rest {
+            letter-spacing: .5rem;
+            font-size: 5.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &__paragraph {
+        color: $color-white;
+        font-size: $default-font-size;
+        font-weight: 400;
+    }
+
+    &__image {
+        margin-top: 5rem;
+    }
+}

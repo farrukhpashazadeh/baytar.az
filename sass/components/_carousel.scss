@@ -1,0 +1,71 @@
+.carousel {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__staff__title {
+        color: $color-dark;
+        font-size: $default-font-size;
+        font-weight: 200;
+    }
+
+    &__title {
+        color: $color-dark;
+        margin-top: 12rem;
+    }
+
+    &__description {
+        color: $color-dark;
+        font-size: 1.3rem;
+        letter-spacing: .5rem;
+    }
+}
+
+.bgimage1 {
+    background: url(/img/a.ruslan.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all .5s ease-in;
+
+    &:hover {
+        background-image: url(/img/a.ruslan-profile.jpg);
+        transform: scale(1.1);
+    }
+}
+
+.bgimage2 {
+    background: url(/img/a.gulnara.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all .5s ease-in;
+
+    &:hover {
+        background-image: url(/img/a.gulnara-profile.jpg);
+        transform: scale(1.1);
+    }
+}
+
+.bgimage3 {
+    background: url(/img/a.aygun.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all .5s ease-in;
+
+    &:hover {
+        background-image: url(/img/a.aygun-profile.jpg);
+        transform: scale(1.1);
+    }
+}
+
+

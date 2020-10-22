@@ -1,0 +1,42 @@
+.icon-bar {
+    position: fixed;
+    top: 80%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+
+.icon-bar a {
+    display: block;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.469);
+}
+
+.icon-bar:hover {
+    width: 15rem;
+}
+
+.icon-bar:hover a {
+    color: blue;
+    text-align: center;
+}
+
+
+.facebook {
+    color: black;
+}
+
+.twitter {
+    color: black;
+}
+
+.instagram {
+    color: black;
+}

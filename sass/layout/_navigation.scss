@@ -1,0 +1,24 @@
+.nav-link,
+.dropdown-item {
+    font-size: $default-font-size;
+    font-weight: 500;
+    color: $color-primary !important;
+    transition: transform .6s;
+
+    &:hover {
+        color: $color-red-logo !important;
+        transform: scale(1.2);
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    font-size: 1.4rem;
+}
+
+.custom-bg {
+    background-color: $color-white;
+}
