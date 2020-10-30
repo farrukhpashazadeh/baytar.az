@@ -14,9 +14,6 @@
         baytarlarla fermerlərin qarşılıqlı fəaliyyətinin təmin edilməsi
         üçün həyata keçirilmişdir.">
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="css/main.css">
-
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -61,29 +58,48 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-
-    <!-- The social media icon bar -->
-    <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-    </div>
-
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top custom-bg border">
+    <header class="header">
         <div class="container">
+            <div class="header__contact">
+                <div class="row">
+                    <ul class="col-lg-5 d-flex header__contact__info">
+                        <li class="header__contact__info__item"><a href="tel:+994124648442"
+                                class="header__contact__info__item__link">+994 12 464 84 42</a></li>
+                        <li class="header__contact__info__item"><a href="mailto:info@baytar.az"
+                                class="header__contact__info__item__link">info@baytar.az</a></li>
+                    </ul>
+                    <ul class="col-lg-2 offset-lg-5 d-flex header__contact__social justify-content-end">
+                        <li class="header__contact__social__item"><a href="#"
+                                class="header__contact__social__item__link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="header__contact__social__item"><a href="#"
+                                class="header__contact__social__item__link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="header__contact__social__item"><a href="#"
+                                class="header__contact__social__item__link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg py-3 navbar-light sticky-top custom-bg">
+        <div class="container pr-0">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" width="150" height="auto" alt="Logo" loading="lazy">
             </a>
@@ -141,516 +157,144 @@
         </div>
     </nav>
 
-    <header class="header">
+    <main class="main">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-6">
-                    <h1 class="text-capitalize header__heading">Onların <span
-                            class="header__heading--rest">qayğısındayıq</span></h1>
-                    <p class="header__paragraph my-5">Sizinlə əlaqə saxlamağımız üçün müraciət formunu doldurun!</p>
-                    <a href="#form" class="text-capitalize btn btn-light text-dark px-5 py-3">Müraciət et</a>
-
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="main__left">
+                        <div class="main__left__text-wrapper">
+                            <div class="main__left__text-wrapper__heading text-capitalize mb-4">We care
+                                <span class="main__left__text-wrapper__heading--rest">Your pets</span>
+                            </div>
+                            <p class="main__left__text-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit, sed do eiusmod.</p>
+                            <a href="#" class="main__left__text-wrapper__button text-capitalize">Contact us</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/dog3.png" alt="Dog" width="500" class="header__image">
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <!-- <div class="section">
-    <div class="container">
-            <h2 class="text-center display-3">Xidmətlərimiz</h2>
-            <p class="text-center services__description">Online və yerində xidmət göstərdiyimiz sahələr</p>
-
-            <ul class="row my-5 services__list justify-content-between">
-                <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                    <i class="fas fa-signal"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Online baytar məsləhəti</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-tractor"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Onlayn fermer məsləhəti</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr,
-                        müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-clinic-medical"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Klinika xidmətləri</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-            </ul>
-
-            <ul class="row my-5 services__list justify-content-between">
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-disease"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">İnfeksion və İnvazion xəstəliklər çağrısı</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-vials"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Laboratoriya xidməti</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr,
-                        müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-medkit"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Heyvanların yerində müayinə və müalicəsi</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-            </ul>
-
-            <ul class="row my-5 services__list justify-content-between">
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fas fa-comment-medical"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Süni Mayalanmaya dair məsləhət Xidməti</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1 text-">
-                    <i class="fab fa-watchman-monitoring"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Ferma və tövlələrin monitorinqi</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr,
-                        müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-                <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                    <i class="fas fa-signal"></i>
-                    <p class="h3 text-dark my-5 text-capitalize">Online baytar məsləhəti</p>
-                    <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat sahəsinə uyğun
-                        ümumi
-                        məsləhət və tövsiyələr, müalicə sxemi kimi
-                        məlumatları əldə edə biləcəksiniz.</p>
-                    <a href="#" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                </li>
-            </ul>
-        </div>
-        </div> -->
-
-    <section id="services" class="services">
-        <h2 class="text-center display-3">Xidmətlərimiz</h2>
-        <p class="text-center services__description">Online və yerində xidmət göstərdiyimiz sahələr</p>
-        <div id="carouselExampleIndicators" class="carousel slide pb-5" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-info px-2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-info px-2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-info px-2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <ul class="row my-5 services__list justify-content-around">
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-signal"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Online baytar məsləhəti</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-tractor"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Onlayn fermer məsləhəti</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr,
-                                müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-clinic-medical"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Klinika xidmətləri</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="carousel-item">
-                    <ul class="row my-5 services__list justify-content-around">
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-disease"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">İnfeksion və İnvazion xəstəliklər</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-vials"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Laboratoriya xidməti</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr,
-                                müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-medkit"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Heyvanların yerində müalicəsi</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="carousel-item">
-                    <ul class="row my-5 services__list justify-content-around">
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-comment-medical"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Konsultasiya</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fab fa-watchman-monitoring"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Ferma və tövlələrin monitorinqi</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr,
-                                müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                        <li class="text-center col-lg-3 services__list__item py-5 display-1">
-                            <i class="fas fa-signal"></i>
-                            <p class="h3 text-dark my-5 text-capitalize">Online baytar məsləhəti</p>
-                            <p class="services__info text-info">Bu xidmət sayəsində Siz onlayn şəkildə təsərrüfat
-                                sahəsinə uyğun
-                                ümumi
-                                məsləhət və tövsiyələr, müalicə sxemi kimi
-                                məlumatları əldə edə biləcəksiniz.</p>
-                            <a href="#form" class="text-capitalize btn btn-dark text-light py-3 px-5 ">Müraciət et</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-7">
+                    <div class="main__right">
+                        <div class="main__right__image">
+                            <img src="img/dog.png" alt="dog" width="520">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span aria-hidden="true"><i class="fas fa-chevron-left text-info size-2rem"></i></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span aria-hidden="true"><i class="fas fa-chevron-right text-info size-2rem "></i></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-    </section>
+    </main>
 
-    <div class="guideline py-5">
-        <h2 class="text-center display-3 py-5">İstifadə mərhələləri</h2>
+    <section class="services text-center">
         <div class="container">
-            <ul class="guideline__list text-center">
-                <div class="row">
-                    <li class="col-lg-4 guideline__list__item">
-                        <div class="guideline__list__item--number">1</div>
-                        <h3 class="py-5">Qeydiyyat</h3>
-                        <p class="guideline__list__item__paragraph">Baytar.az saytında qeydiyyatdan keçmək lazımdır</p>
-                    </li>
-                    <li class="col-lg-4 guideline__list__item">
-                        <div class="guideline__list__item--number">2</div>
-                        <h3 class="py-5">Müraciət</h3>
-                        <p class="guideline__list__item__paragraph">Qeydiyyatdan keçdikdən sonra istədiyiniz təyinat
-                            üzərə müraciət etməniz lazımdır</p>
-                    </li>
-                    <li class="col-lg-4 guideline__list__item">
-                        <div class="guideline__list__item--number">3</div>
-                        <h3 class="py-5">Müayinə və Müalicə</h3>
-                        <p class="guideline__list__item__paragraph">Uyğun olaraq onlayn və ya yerində müayinə və
-                            müalicənin həyata keçirilməsi</p>
-                    </li>
+            <h3 class="services__heading">Services for every dog
+            </h3>
+            <p class="services__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor <br>
+                incididunt ut labore et dolore magna.
+            </p>
+
+            <div class="services__list d-flex justify-content-between">
+                <div class="services__list__item">
+                    <img src="img/service_icon-1.png" alt="dog-icon">
+                    <h3 class="services__list__item__heading">Pet Boarding
+                    </h3>
+                    <p class="services__list__item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut</p>
                 </div>
-            </ul>
-        </div>
-    </div>
-
-    <section class="article text-center">
-        <h2 class="text-center pb-5 display-3 article__title">Məlumatlar</h2>
-        <div class="row d-flex justify-content-around text-center">
-            <div class="col-lg-3 border border-info rounded py-5 display-1 text-info">
-                <i class="fas fa-info"></i>
-                <h3 class="pt-5 text-dark">Xüsusi Təhlükəli Xəstəliklər</h3>
-                <p class="my-5">Peyvəndlənməsi dövlət büdcəsindən maliyələşdirilən heyvanların xüsusi təhlükəli
-                    xəstəliklərinin
-                    siyahısı</p>
-                <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-            </div>
-            <div class="col-lg-3 border border-info rounded py-5 display-1 text-info">
-                <i class="fas fa-info-circle"></i>
-                <h3 class="pt-5 text-dark">Yerli və xarici heyvan cinsləri</h3>
-                <p class="my-5">Peyvəndlənməsi dövlət büdcəsindən maliyələşdirilən heyvanların xüsusi təhlükəli
-                    xəstəliklərinin
-                    siyahısı</p>
-                <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-            </div>
-            <div class="col-lg-3 border border-info rounded py-5 display-1 text-info">
-                <i class="fas fa-info-circle"></i>
-                <h3 class="pt-5 text-dark">Yerli və xarici heyvan cinsləri</h3>
-                <p class="my-5">Peyvəndlənməsi dövlət büdcəsindən maliyələşdirilən heyvanların xüsusi təhlükəli
-                    xəstəliklərinin
-                    siyahısı</p>
-                <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-            </div>
-        </div>
-        <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-4 px-5 mx-auto mt-5">Daha çox</a>
-    </section>
-    FIXME: There is a bug here to solve
-
-
-
-    <div id="news" class="news">
-        <div class="container">
-            <div id="carouselExampleIndicators2" class="carousel slide p-5" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active bg-info px-2"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="1" class="bg-info px-2"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="2" class="bg-info px-2"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="3" class="bg-info px-2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active text-center">
-                        <div class="text-center news__item">
-                            <div class="news__image img-1"></div>
-                            <h4 class="my-5">Şmallenberq xəstəliyi və ona qarşı mübarizə tədbirləri - mütəxəssis
-                                tövsiyəsi</h4>
-                            <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item text-center">
-                        <div class="text-center news__item">
-                            <div class="news__image img-2"></div>
-                            <h4 class="my-5">Dabaq xəstəliyinə qarşı peyvəndləməyə başlanılıb</h4>
-                            <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item text-center">
-                        <div class="text-center news__item">
-                            <div class="news__image img-3"></div>
-                            <h4 class="my-5">Şəki rayonunda heyvanlar arasında peyvəndləmə işləri görülür</h4>
-                            <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item text-center">
-                        <div class="text-center news__item">
-                            <div class="news__image img-4"></div>
-                            <h4 class="my-5">Goranboy rayonunda profilaktik tədbirlər davam etdirilir</h4>
-                            <a href="#" class="mb-5 text-capitalize btn btn-dark text-light py-3 px-5">Ətraflı</a>
-
-                        </div>
-                    </div>
-
+                <div class="services__list__item">
+                    <img src="img/service_icon-2.png" alt="dog-icon">
+                    <h3 class="services__list__item__heading">Healthy Meals
+                    </h3>
+                    <p class="services__list__item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut</p>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                    <span aria-hidden="true"><i class="fas fa-chevron-left text-info size-2rem"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                    <span aria-hidden="true"><i class="fas fa-chevron-right text-info size-2rem "></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <section id="staff" class="carousel">
-        <h2 class="text-center pt-3 display-3 carousel__title">Baytar heyyəti</h2>
-        <p class="text-center carousel__description">Peşakar mütəxəssis həkimlərimizlə onların xidmətindəyik</p>
-        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <ul class="row mt-5 justify-content-around">
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage1 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Aslanov Ruslan</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Baş həkim</p>
-                        </li>
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage2 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Əliyeva Gülnarə</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Həkim köməkçisi</p>
-                        </li>
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage3 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Əzizova Aygün</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Baş məsləhətçi</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="carousel-item">
-                    <ul class="row mt-5 justify-content-around">
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage1 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Aslanov Ruslan</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Baş həkim</p>
-                        </li>
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage2 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Əliyeva Gülnarə</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Həkim köməkçisi</p>
-                        </li>
-                        <li class="text-center col-lg-3 display-1">
-                            <div class="bgimage3 mx-auto"></div>
-                            <h3 class="text-dark mt-5 text-capitalize">Əzizova Aygün</h3>
-                            <p class="carousel__staff__title my-2 text-capitalize">Baş məsləhətçi</p>
-                        </li>
-                    </ul>
+                <div class="services__list__item">
+                    <img src="img/service_icon-3.png" alt="dog-icon">
+                    <h3 class="services__list__item__heading">Pet Spa
+                    </h3>
+                    <p class="services__list__item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="form" class="form">
+    <section class="information">
         <div class="container">
-            <form class="form-head mx-auto py-5 text-light text-center text-uppercase">
-                <div class="form-group">
-                    <label for="inputName">Ad</label>
-                    <input type="text" class="form-control" id="inputName">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputCity">Şəhər</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputPhoneNumber">Əlaqə nömrəsİ</label>
-                    <input type="tel" class="form-control" id="inputPhoneNumber">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="selectSubject">Xİdmət sahəsİ</label>
-                    <select id="selectSubject" class="form-control">
-                        <option selected>Başlıq seçin</option>
-                        <option>Online baytar məsləhəti</option>
-                        <option>Onlayn fermer məsləhəti</option>
-                        <option>Klinika xidmətləri</option>
-                        <option>İnfeksion və İnvazion xəstəliklər</option>
-                        <option>Laboratoriya xidməti</option>
-                        <option>Heyvanların yerində müalicəsi</option>
-                        <option>Konsultasiya</option>
-                        <option>Ferma və tövlələrin monitorinqi</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputMessage">Mesajınız</label>
-                    <textarea class="form-control" id="inputMessage" rows="5"></textarea>
-                </div>
-
-                <div class="form-group d-flex mt-4">
-                    <p class="mr-3 ">Zəng edək?</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                        </label>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="information__left">
+                        <div class="information__left__image">
+                            <img src="img/pet-care.png" alt="cat" width="450">
+                        </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-dark text-light py-3 px-5">Göndər</button>
-            </form>
+                <div class="col-lg-5">
+                    <div class="information__right">
+                        <div class="information__right__text-wrapper">
+                            <div class="information__right__text-wrapper__heading mb-4">We care your pet
+                                <span class="information__right__text-wrapper__heading--rest">As you care</span>
+                            </div>
+                            <p class="information__right__text-wrapper__paragraph">Lorem ipsum dolor sit , consectetur
+                                adipiscing elit, sed do
+                                iusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan.</p>
+                            <a href="#" class="information__right__text-wrapper__button text-capitalize">About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-
-    <footer class="footer text-light py-5">
+    <section class="help">
         <div class="container">
-            <div class="row border-bottom">
-                <div class="col-lg-3">
-                    <p class="h1 my-5">Haqqımızda</p>
-                    <p class="footer__about">Baytar.az layihəsi Azərbaycan Respublikası Baytarlıq Elmi Tədqiqat
-                        İnstitutu və Agro Expertin
-                        təşəbbüsü ilə baytarlarla
-                        fermerlərin qarşılıqlı fəaliyyətinin təmin edilməsi üçün həyata keçirilmişdir</p>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="help__left">
+                        <div class="help__left__text-wrapper">
+                            <div class="help__left__text-wrapper__heading mb-4">We need your
+                                <span class="help__left__text-wrapper__heading--rest">help Adopt Us</span>
+                            </div>
+                            <p class="help__left__text-wrapper__paragraph">Lorem ipsum dolor sit , consectetur
+                                adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Quis ipsum suspendisse ultrices.</p>
+                            <a href="#" class="help__left__text-wrapper__button text-capitalize">Contact us</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 offset-1">
-                    <p class="h1 my-5">Xidmətlər</p>
-                    <ul>
-                        <li><a href="">Konsultasiya</a></li>
-                        <li><a href="">Konsultasiya</a></li>
-                        <li><a href="">Konsultasiya</a></li>
-                        <li><a href="">Konsultasiya</a></li>
-                        <li><a href="">Konsultasiya</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-2">
-                    <p class="h1 my-5">Əlaqə</p>
-                    <ul>
-                        <li><a href="">+994 (12) 464 84 42</a></li>
-                        <li><a href="">info@baytar.az</a></li>
-                        <li><a href="">Bakı, Azərbaycan</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 my-5 offset-1">
-                    <img src="img/logo.png" alt="" width="200">
+                <div class="offset-lg-1 col-lg-6">
+                    <div class="help__right">
+                        <div class="row d-flex justify-content-between">
+                            <div class="help__right__left d-flex align-items-center">
+                                <div class="help__right__left__item text-center">
+                                    <img src="img/1.png" alt="icon">
+                                    <p class="help__right__left__item__counter" id="counter"></p>
+                                    <p class="help__right__left__item__paragraph text-capitalize">Pets available</p>
+                                </div>
+                            </div>
+                            <div class="help__right__right">
+                                <div class="help__right__right__item text-center">
+                                    <img src="img/3.png" alt="icon">
+                                    <p class="help__right__left__item__counter" id="counter2"></p>
+                                    <p class="help__right__left__item__paragraph text-capitalize">Pets available</p>
+                                </div>
+                                <div class="help__right__right__item text-center">
+                                    <img src="img/2.png" alt="icon">
+                                    <p class="help__right__left__item__counter" id="counter3"></p>
+                                    <p class="help__right__left__item__paragraph text-capitalize">Pets available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="footer__copyright">Copyright ©2020 All rights reserved</p>
         </div>
-    </footer>
+    </section>
 
-
-
-
-    <!-- -------------------------------------------------------------------------------------------- -->
-
-    <!-- -------------------------------------------------------------------------------------------- -->
-
-    <!-- -------------------------------------------------------------------------------------------- -->
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -664,6 +308,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>
